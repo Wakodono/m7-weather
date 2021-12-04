@@ -30,9 +30,6 @@ function App() {
         />
 
         <div class="relative container pt-12 px-4 mb-20 mx-auto text-center">
-          <span class="text-blue-500 font-semibold">
-            Built with react and redux
-          </span>
           <h2 class="mt-8 mb-8 lg:mb-12 text-white text-4xl lg:text-6xl font-semibold">
             Weather App
           </h2>

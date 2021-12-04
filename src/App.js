@@ -65,31 +65,31 @@ function App() {
             {error?.message}
           </h1>
         ) : (
-          <div class="max-w-6xl px-4 mx-auto ">
-            <div class="flex flex-wrap -mx-4 justify-center">
-              <div class="w-full md:w-1/3 px-4">
-                <div class="p-8 border border-blue-800 rounded-lg">
-                  <div class="flex justify-start  items-center">
-                    <span class="flex items-center justify-center w-16 h-16 rounded-full border-2">
+          <div className="max-w-6xl px-4 mx-auto ">
+            <div className="flex flex-wrap -mx-4 justify-center">
+              <div className="w-full md:w-1/3 px-4">
+                <div className="p-8 border border-blue-800 rounded-lg">
+                  <div className="flex justify-start  items-center">
+                    <span className="flex items-center justify-center w-16 h-16 rounded-full border-2">
                       {/* weather logo */}
                       <img
-                        class="w-56 "
+                        className="w-56 "
                         src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`}
                         alt="/"
                       />
                     </span>
-                    <h1 class="text-gray-300 pl-5">
+                    <h1 className="text-gray-300 pl-5">
                       {weather?.weather[0].main}
                     </h1>{" "}
                   </div>
-                  <h1 class="text-gray-300 text-center text-4xl mb-10">
+                  <h1 className="text-gray-300 text-center text-4xl mb-10">
                     {Math.ceil(Number(weather?.main.temp))}{" "}
-                    <span class="text-yellow-500 text-4xl">°C</span>
+                    <span className="text-yellow-500 text-4xl">°C</span>
                   </h1>
-                  <h3 class="mb-6 text-xl text-white font-semibold">
+                  <h3 className="mb-6 text-xl text-white font-semibold">
                     {weather?.name}, {weather?.sys?.country}
                   </h3>
-                  <p class="mb-8 text-gray-300">
+                  <p className="mb-8 text-gray-300">
                     The weather condition in {weather?.name},{" "}
                     {weather?.sys?.country} is described as :{" "}
                     {weather?.weather[0].description} with a temperature of{" "}
@@ -97,13 +97,13 @@ function App() {
                     {weather?.main?.humidity} %
                   </p>
                   <a
-                    class="ml-auto flex items-center justify-center w-20 h-20 rounded-full  hover:bg-blue-700 text-white"
+                    className="ml-auto flex items-center justify-center w-20 h-20 rounded-full  hover:bg-blue-700 text-white"
                     href="#"
                   >
-                    <span class="flex items-center justify-center w-16 h-16 rounded-full border-2">
+                    <span className="flex items-center justify-center w-16 h-16 rounded-full border-2">
                       {/* weather logo */}
                       <img
-                        class="w-56 "
+                        className="w-56 "
                         src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`}
                         alt="/"
                       />
@@ -116,8 +116,8 @@ function App() {
         )}
       </section>
       {/* Footer */}
-      <div class="text-center bg-green-900">
-        <p class="mb-4  text-gray-300">
+      <div className="text-center bg-green-900">
+        <p className="mb-4  text-gray-300">
           Strive 2021
         </p>
       </div>
